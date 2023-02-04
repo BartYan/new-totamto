@@ -1,0 +1,56 @@
+.button {
+    width: fit-content;
+    display: block;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: $color_dark;
+    -webkit-box-shadow: 10px 10px 0px 0px #dddd0a;
+    -moz-box-shadow: 10px 10px 0px 0px #dddd0a;
+    box-shadow: 10px 10px 0px 0px #dddd0a;
+    transition: all 0.1s ease-in-out;
+}
+.button:hover {
+    color: #fff;
+    padding: 11px 21px;
+    background-color: $color_blue;
+    -webkit-box-shadow: 10px 10px 0px 0px $color_dark;
+    -moz-box-shadow: 10px 10px 0px 0px $color_dark;
+    box-shadow: 10px 10px 0px 0px $color_dark;
+}
+
+.button-small {
+    font-size: 1rem;
+}
+
+.blog__button-right {
+    margin-right: 20%;
+    @media only screen and (max-width: 1024px) {
+        margin-right: 0;
+    }
+}
+.blog__button-left {
+    margin-left: 20%;
+    @media only screen and (max-width: 1024px) {
+        margin-left: 0;
+    }
+}
+
+.topBtn {
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    opacity: 0;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: $color_red;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 95;
+    @media only screen and (max-width: 1024px) {
+        bottom: 3rem;
+        right: 1rem;
+    }
+}

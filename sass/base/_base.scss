@@ -1,0 +1,52 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 70px 0 0; //nav height
+    padding: 0;
+    font-family: 'FuturaPTBook';
+    background-color: $color_white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-size: 16px;
+
+    @media (min-width: 768px) {
+        font-size: 14px;
+    }
+    @media (min-width: 1024px) {
+        font-size: 16px;
+    }
+    @media (min-width: 1200px) {
+		margin: 95px 0 0;
+	}
+    @media (min-width: 1600px) {
+        font-size: 16px;
+    }
+    @media (min-width: 2800px) {
+        font-size: 20px;
+    }
+}
+
+.blue-date {
+    color: $color_blue;
+    font-weight: 600;
+}
+
+.desktop {
+    display: block;
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+.mobile {
+    display: none;
+    @media (max-width: 600px) {
+        display: block;
+    }
+}
+
+.m-b-4 {
+    margin-bottom: 4%;
+}

@@ -1,0 +1,1201 @@
+.section {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.45rem;
+    text-align: justify;
+    text-justify: inter-word;
+    color: $color_dark;
+    margin: 7% auto 0;
+    max-width: 1750px;
+    overflow-x: none;
+    @media only screen and (max-width: 1024px) {
+        margin: 7rem auto 0;
+    }
+    // star next to title
+    &__star {
+        position: absolute;
+        top: 0;
+        right: 10%;
+        z-index: -1;
+        width: 12vw;
+        max-width: 380px;
+        @media only screen and (max-width: 1800px) {
+            right: 8%;
+        }
+        @media only screen and (max-width: 1024px) {
+            width: 15%;
+            right: 0;
+        }
+        @media only screen and (max-width: 768px) {
+            width: 20%;
+            top: 10rem;
+        }
+    }
+    // all books for example
+    &__all {
+        position: absolute;
+        top: -10%;
+        right: 5%;
+        z-index: 10;
+        width: 10vw;
+        max-width: 200px;
+        @media only screen and (max-width: 1024px) {
+            width: 20%;
+            right: 0;
+        }
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    @media only screen and (max-width: 768px) {
+        width: 90%;
+    }
+
+    &__header {
+        width: 100%;
+        text-align: center;
+        font-family: 'FuturaPTHeavy';
+
+        &-head {
+            font-size: 4.3rem;
+            color: $color_dark;
+            @media only screen and (max-width: 768px) {
+                font-size: 3.3rem;
+            }
+        }
+
+        &-subHead {
+            font-family: 'FuturaPTHeavy';
+            font-size: 2.1rem;
+            color: $color_blue;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            @media only screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0 2%;
+                @media only screen and (max-width: 1024px) {
+                    flex-direction: column;
+                }
+            }
+            img {
+                width: 150px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.social {
+    position: fixed;
+    top: 7rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    @media (max-width: 1024px) {
+        top: auto;
+        bottom: 3rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        padding: 0.5rem 0 0.5rem 1rem;
+        img {
+            width: 30px;
+            height: auto;
+        }
+    }
+    &__circle-yt {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ff2500;
+        border-radius: 50%;
+        img {
+            width: 20px;
+            height: auto;
+        }
+    }
+}
+
+.welcome {
+    width: 80%;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
+    
+    &__head {
+        width: 100%;
+        font-family: 'FuturaPTHeavy';
+        font-size: 5.3rem;
+        text-align: center;
+        color: $color_blue;
+        margin: 0;
+        padding: 0;
+    }
+    &__box {
+        //border: 2.8px solid $color_blue;
+        margin: -25px 0 0;
+        padding: 2rem 3rem;
+        text-align: center;
+        &-txt {
+            font-family: 'FuturaPTHeavy';
+            font-size: 1.8rem;
+            //text-align: justify;
+            color: $color_dark;
+            @media only screen and (max-width: 768px) {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+.about {
+    position: relative;
+    margin: 7% auto;
+    @media only screen and (max-width: 768px) {
+        margin: 15% auto;
+    }
+    @media only screen and (max-width: 450px) {
+        margin: 25% auto 20%;
+    }
+
+    &__head {
+        text-align: center;
+        &-logo {
+            max-width: 450px;
+            @media only screen and (max-width: 768px) {
+                width: 80%;
+            }
+        }
+    }
+
+    &__subHead {
+        font-family: 'FuturaPTHeavy';
+        font-size: 3rem;
+        margin: 2.5rem 0;
+        text-align: left;
+        @media only screen and (max-width: 768px) {
+            text-align: center;
+            width: 100%;
+            font-size: 2rem;
+        }
+    }
+
+    &__opening {
+        width: 50%;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    &__txt {
+        width: 80%;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+
+    &__imgRight {
+        position: absolute;
+        top: 14rem;
+        right: 5%;
+        z-index: -1;
+        width: 35vw;
+        max-width: 500px;
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__imgLeft {
+        position: absolute;
+        bottom: -5rem;
+        left: 0;
+        z-index: -1;
+        max-width: 210px;
+        @media only screen and (max-width: 1024px) {
+            top: auto;
+            bottom: 0;
+            width: 25vw;
+            left: -10%;
+        }
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.blog {
+    position: relative;
+    display: block;
+    margin: 8% 0;
+
+    @media only screen and (max-width: 1024px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    @media only screen and (min-width: 1500px) {
+        min-height: 550px;
+    }
+
+    @media only screen and (min-width: 1800px) {
+        min-height: 600px;
+        margin: 8% 0;
+    }
+
+    &__img {
+        height:539px; width:542px;
+        position: absolute;
+        top: 20px;
+        // width: 45%;
+        // height: auto;
+        max-width: 600px;
+        @media only screen and (max-width: 1600px) {
+            height:400px; width:400px;
+        }
+        @media only screen and (max-width: 1250px) {
+            height:350px; width:350px;
+        }
+        @media only screen and (max-width: 1024px) {
+            position: relative;
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    &__img-left {
+        right: 0;
+    }
+
+    &__window {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 4% 0;
+
+        &-border {
+            width: 90%;
+            border: 2.8px solid $color_blue;
+            z-index: -1;
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+                padding: 18% 0 5%;
+                margin: -15% auto 0;
+            }
+        }
+
+        &-content {
+            width: 53%;
+            padding: 1rem 2.5rem 2rem;
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+                padding: 0;
+                margin: 0 auto;
+            }
+        }
+
+        &-head {
+            font-family: 'FuturaPTHeavy';
+            font-size: 3.5rem;
+            text-align: center;
+            margin: 0 auto;
+            @media only screen and (max-width: 1024px) {
+               padding: 1rem 2rem;
+            }
+            @media only screen and (max-width: 800px) {
+                font-size: 2.2rem;
+            }
+        }
+
+        &-subHead {
+            font-family: 'FuturaPTHeavy';
+            font-size: 1.8rem;
+            color: $color_red;
+            line-height: 30px;
+            padding: 4% 0;
+            @media only screen and (max-width: 1024px) {
+                padding: 1rem 2rem;
+            }
+        }
+        &-txt {
+            @media only screen and (max-width: 1024px) {
+                padding: 1rem 2rem;
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        @media only screen and (max-width: 1024px) {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        @media only screen and (max-width: 1024px) {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+// carousel styles
+.wrapper-carousel {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+    @media only screen and (max-width: 1200px) {
+        width: 90%;
+        margin: 0 auto 20%;
+    }
+}
+
+.carousel {
+    width: 90%;
+    margin: 0 auto;
+    // cursor: grab;
+    // cursor: -moz-grab;
+    // cursor: -webkit-grab;
+}
+// .carousel:active {
+//     cursor: grabbing;
+//     cursor: -moz-grabbing;
+//     cursor: -webkit-grabbing;
+// }
+
+.carousel-padd {
+    padding: 0 5%;
+}
+
+.slick-slide {
+    margin: 10px;
+}
+
+.slick-list {
+    display: flex!important;
+}
+
+.slick-slide img {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.wrapper .slick-dots li button::before {
+    font-size: 20px;
+    color: black;
+}
+
+.slick-prev, .slick-next {
+    z-index: 90;
+}
+
+.slick-prev::before {
+    content: '\25C0'!important;
+    font-size: 2rem!important;
+    color: $color_blue!important;
+}
+
+.slick-next::before {
+    content: '\25B6'!important;
+    font-size: 2rem!important;
+    color: $color_blue!important;
+}
+
+.slick-track {
+    display: flex!important;
+    align-items: center;
+}
+
+// Main Slider
+.slider {
+    .slick-slide {
+        margin: 0;
+        cursor: pointer;
+        img {
+            width: 100%;
+        }
+    }
+    .slick-dots {
+        li button:before {
+            margin-top: 14px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+}
+
+// Książki!
+.slick__books {
+    position: relative;
+
+    &-imageBox {
+        position: relative;
+    }
+    img {
+        @media only screen and (max-width: 1200px) {
+            width: 95%;
+        }
+    }
+
+    &-info--center {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media only screen and (max-width: 1200px) {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-info {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @media only screen and (max-width: 1200px) {
+            width: 100%;
+        }
+
+        div {
+            // min-height: 120px;
+            padding: 0 0 1rem;
+        }
+
+        h5 {
+            font-family: 'FuturaPTBold';
+            font-size: 1.4rem;
+            line-height: 32px;
+        }
+
+        p {
+            font-family: 'FuturaPTBook';
+            font-size: 1.2rem;
+            line-height: 32px;
+            padding: 2% 0;
+        }
+
+        &--button {
+            min-height: 60px;
+        }
+
+        .button {
+            background-color: $color_dark;
+            -webkit-box-shadow: 10px 10px 0px 0px $color_blue;
+            -moz-box-shadow: 10px 10px 0px 0px $color_blue;
+            box-shadow: 10px 10px 0px 0px $color_blue;
+        }
+
+        .button:hover {
+            background-color: $color_dark;
+            -webkit-box-shadow: 10px 10px 0px 0px #dddd0a;
+            -moz-box-shadow: 10px 10px 0px 0px #dddd0a;
+            box-shadow: 10px 10px 0px 0px #dddd0a;
+            transition: all 0.1s ease-in-out;
+        }
+    }
+    .bestseller {
+        position: absolute;
+        display: block;
+        bottom: 10%;
+        left:4%;
+        z-index: -1;
+        width: 100px;
+        @media only screen and (max-width: 500px) {
+            width: 80px;
+            left:0%;
+            bottom: 22%;
+        }
+    }
+    .new {
+        position: absolute;
+        display: block;
+        top: 0;
+        right:0;
+        z-index: 100;
+        width: 100px;
+        @media only screen and (max-width: 500px) {
+            width: 80px;
+        }
+    }
+    //age-circle
+    &-age {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 5%;
+        right: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 50;
+
+        border-radius: 50%;
+        background: $color_dark;
+        color: $color_white;
+        font-size: 14px;
+        @media only screen and (max-width: 500px) {
+            width: 70px;
+            height: 70px;
+        }
+        a {
+            font-size: 14px;
+            text-decoration: none;
+            color: $color_white;
+            &:hover {color: $color_blue;}
+        }
+    }
+    //age star
+    &-star {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        bottom: 0;
+        right: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 50;
+        color: $color_white;
+        font-size: 14px;
+        @media only screen and (max-width: 500px) {
+            width: 90px;
+            height: 90px;
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            z-index: 2;
+        }
+        a {
+            font-size: 14px;
+            text-decoration: none;
+            color: $color_white;
+            z-index: 3;
+            &:hover {color: $color_red;}
+        }
+    }
+}
+
+.items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 5%;
+    @media only screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+
+    &-info {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 7% 0 5%;
+        text-align: left;
+        @media only screen and (max-width: 1024px) {
+            width: 50%;
+            margin-right: 0%;
+            text-align: center;
+            align-items: center;
+            // margin: 0 7% 0 0;
+            margin: 0 auto;
+        }
+        @media only screen and (max-width: 500px) {
+            width: 80%;
+            // margin-right: 0%;
+        }
+
+        div {
+            min-height: 120px;
+        }
+        a {
+            text-decoration: none;
+            color: #231f20;
+        }
+
+        h5 {
+            font-family: 'FuturaPTBold';
+            font-size: 2.2rem;
+            line-height: 32px;
+        }
+
+        p {
+            font-family: 'FuturaPTBook';
+            font-size: 1.2rem;
+            line-height: 32px;
+            padding: 2% 0;
+            text-align: justify;
+        }
+
+        .button {
+            margin-top: 1rem;
+            background-color: $color_dark;
+            -webkit-box-shadow: 10px 10px 0px 0px $color_blue;
+            -moz-box-shadow: 10px 10px 0px 0px $color_blue;
+            box-shadow: 10px 10px 0px 0px $color_blue;
+            color: #fff;
+        }
+
+        .button:hover {
+            background-color: $color_dark;
+            -webkit-box-shadow: 10px 10px 0px 0px #dddd0a;
+            -moz-box-shadow: 10px 10px 0px 0px #dddd0a;
+            box-shadow: 10px 10px 0px 0px #dddd0a;
+            transition: all 0.1s ease-in-out;
+        }
+    }
+    &-info-right {
+        text-align: right;
+        @media only screen and (max-width: 1024px) {
+            text-align: center;
+        }
+    }
+    &-info-m {
+        @media only screen and (max-width: 1024px) {
+            margin: 1rem auto;
+        }
+    }
+    .items__stars {
+        position: relative;
+        margin: 0 1rem 0 0;
+        
+        @media only screen and (max-width: 768px) {
+           position: absolute;
+           top: 0;
+           left: 0;
+        }
+        .bestseller {
+            display: block;
+            z-index: 10;
+            width: 100px;
+            margin: 0 0 1rem;
+            @media only screen and (max-width: 500px) {
+                width: 80px;
+            }
+        }
+        .new {
+            display: block;
+            z-index: 10;
+            width: 100px;
+            @media only screen and (max-width: 500px) {
+                width: 80px;
+            }
+        }
+    }
+    
+    &__books {
+        width:40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @media only screen and (max-width: 1024px) {
+            justify-content: center;
+            width: 70%;
+        }
+        @media only screen and (max-width: 650px) {
+            width: 90%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 465px;
+        }
+    }
+    &__edu {
+        width:40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @media only screen and (max-width: 1024px) {
+            justify-content: center;
+            width: 70%;
+        }
+        @media only screen and (max-width: 650px) {
+            width: 90%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 465px;
+        }
+    }
+    &__author {
+        position: relative;
+        // width:40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        @media only screen and (max-width: 1024px) {
+            justify-content: center;
+        }
+        .author__photo {
+            width:300px;
+            height:300px;
+            display: block;
+            border-radius: 50%;
+            -webkit-box-shadow: -30px 30px 0px 0px $color_yellow;
+            -moz-box-shadow: -30px 30px 0px 0px $color_yellow;
+            box-shadow: -30px 30px 0px 0px $color_yellow;
+            @media only screen and (max-width: 1024px) {
+                width:180px;
+                height:180px;
+                margin: 2rem 0;
+            }
+        }
+        .illustrator__photo {
+            -webkit-box-shadow: -30px 30px 0px 0px $color_red;
+            -moz-box-shadow: -30px 30px 0px 0px $color_red;
+            box-shadow: -30px 30px 0px 0px $color_red;
+        }
+    }
+}
+.items-start {
+    align-items: flex-start;
+    @media only screen and (max-width: 1024px) {
+        align-items: center;
+    }
+}
+.items-authors {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 5%;
+    @media only screen and (max-width: 1024px) {
+        margin: 10% auto;
+    }
+    &-desc {
+        margin-bottom: 1rem;
+    }
+    .button {
+        margin: 1rem 0 0;
+        display: unset;
+    }
+}
+.items-authors-left {
+    @media only screen and (max-width: 1024px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.slick__author {
+    &-imgBox {
+        position: relative;
+        width: 300px;
+        height: 350px;
+        margin: 0 auto;
+        @media only screen and (max-width: 1200px) {
+            width: 300px;
+            height: 350px;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 80%;
+            height: 250px;
+        }
+        .author__photo {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            -webkit-box-shadow: -30px 30px 0px 0px $color_yellow;
+            -moz-box-shadow: -30px 30px 0px 0px $color_yellow;
+            box-shadow: -30px 30px 0px 0px $color_yellow;
+            @media only screen and (max-width: 1200px) {
+                width: 250px;
+                height: 250px;
+            }
+            @media only screen and (max-width: 600px) {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+            }
+        }
+        .illustrator__photo {
+            -webkit-box-shadow: -30px 30px 0px 0px $color_red;
+            -moz-box-shadow: -30px 30px 0px 0px $color_red;
+            box-shadow: -30px 30px 0px 0px $color_red;
+        }
+    }
+
+    &-info {
+        a {
+            text-decoration: none;
+            color: #231f20;
+        }
+        h5 {
+            font-family: 'FuturaPTBold';
+            font-size: 1.5rem;
+            line-height: 32px;
+            text-align: center;
+            padding: 0 0 5%;
+        }
+
+        p {
+            font-family: 'FuturaPTBook';
+            font-size: 1.2rem;
+            line-height: 32px;
+            padding: 2% 0;
+            text-align: center;
+            padding: 0 15%;
+            @media only screen and (max-width: 600px) {
+                padding: 0 5%;
+            }
+        }
+    }
+}
+
+.soon {
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5% auto;
+    @media only screen and (max-width: 1024px) {
+        flex-direction: column;
+        margin: 20% auto;
+    }
+
+    &__left {
+        width: 50%;
+        margin: 0 auto;
+        @media only screen and (max-width: 1024px) {
+            width: 80%;
+        }
+
+        img {
+            display: block;
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+
+    &__right {
+        width: 50%;
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+         }
+        &-head {
+            width: fit-content;
+            font-family: 'FuturaPTBoldOblique';
+            font-size: 2.2rem;
+            line-height: 32px;
+            text-align: left;
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+        &-subHead {
+            width: fit-content;
+            font-family: 'FuturaPTBook';
+            font-size: 1.5rem;
+            line-height: 32px;
+            text-align: left;
+            padding: 2% 0;
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+        &-date {
+            font-family: 'FuturaPTBook';
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 32px;
+            text-align: left;
+            padding: 4% 0 2%;
+        }
+        &-txt {
+            font-family: 'FuturaPTBook';
+            font-size: 1.5rem;
+            line-height: 27px;}
+    }
+}
+a {
+    text-decoration: none;
+}
+.copyrights {
+    width: 100%;
+    font-family: 'FuturaPTBook';
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #231f20;
+    margin-top: 30px;
+    @media only screen and (max-width: 1024px) {
+        margin: 0 0 1rem;
+        padding: 0;
+    }
+}
+.copyrights_abs {
+    width: 100%;
+    font-family: 'FuturaPTBook';
+    position: absolute;
+    bottom: 55px;
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+    @media only screen and (max-width: 600px) {
+        bottom: 3px;
+    }
+}
+
+//Catalog Page
+.catalog {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .catalog__button-box {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+//Materialy Edukacyjne Page
+.edu__text {
+    margin: 4rem auto 6rem;
+    width: 60%;
+    text-align: center;
+}
+
+//new posts columns styles
+.articles {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+    &__item {
+        position: relative;
+        width: 100%;
+        max-width: 370px;
+        margin: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-imageBox {
+            position: relative;
+        }
+        &-thumb {
+            text-decoration: none;
+            width: 100%;
+            &--img {
+                width: 100%;
+                height: auto;
+                &-author {
+                    width:300px;
+                    height:300px;
+                    display: block;
+                    border-radius: 50%;
+                    -webkit-box-shadow: -30px 30px 0px 0px $color_yellow;
+                    -moz-box-shadow: -30px 30px 0px 0px $color_yellow;
+                    box-shadow: -30px 30px 0px 0px $color_yellow;
+                    @media only screen and (max-width: 1024px) {
+                        width:180px;
+                        height:180px;
+                        margin: 2rem 0;
+                    }
+                }
+            }
+        }
+        &-head {
+            font-family: 'FuturaPTBold';
+            font-size: 1.5rem;
+            line-height: 2rem;
+            text-align: center;
+            padding: 0;
+        }
+        &-author {
+            font-family: "FuturaPTBook";
+            font-size: 1.2rem;
+            line-height: 32px;
+            padding: 2% 0;
+            text-align: justify;
+        }
+        &-desc {
+            font-family: 'FuturaPTBook';
+            font-size: 1.2rem;
+            line-height: 32px;
+            padding: 2% 0;
+            text-align: center;
+            padding: 0 15%;
+            @media only screen and (max-width: 600px) {
+                padding: 0 5%;
+            }
+        }
+        &-button {
+            height: 50px;
+            text-decoration: none;
+            color: #231f20;
+        }
+        &-age {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 5%;
+            right: 7%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+    
+            border-radius: 50%;
+            background: $color_dark;
+            font-size: 14px;
+            color: $color_white;
+            @media only screen and (max-width: 500px) {
+                width: 70px;
+                height: 70px;
+            }
+            a {
+                font-size: 14px;
+                text-decoration: none;
+                color: $color_white;
+                &:hover {color: $color_blue;}
+            }
+        }
+        //age star
+        &-star {
+            width: 110px;
+            height: 110px;
+            position: absolute;
+            bottom: 0;
+            right: 7%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+            color: $color_white;
+            font-size: 14px;
+            @media only screen and (max-width: 500px) {
+                width: 90px;
+                height: 90px;
+            }
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                z-index: 2;
+            }
+            a {
+                font-size: 14px;
+                text-decoration: none;
+                color: $color_white;
+                z-index: 3;
+                &:hover {color: $color_red;}
+            }
+        }
+    }
+}
+
+// SLICK smooth photos loading 
+.carousel,
+.slider {
+   visibility: hidden;
+   opacity: 0;  
+   transition: opacity 0.3s;
+}
+
+.carousel.slick-initialized,
+.slider.slick-initialized {
+  visibility: visible;
+  opacity: 1;
+}
+
+.carousel img {
+  display: none ;
+}
+
+.carousel img:first-child {
+  display: block; 
+  visibility: hidden;
+} 
+
+.carousel.slick-initialized img {
+  display: block;
+  visibility: visible!important;
+}
+
+// Custom authors archive 
+.articles-authors {
+
+    .items-authors {
+        min-width: 400px;
+        margin: 0 0 8%;
+        flex-direction: column;
+        @media only screen and (max-width: 1024px) {
+            min-width: 100%;
+        }
+    }
+    .author__photo {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .items-info {
+        width: 100%;
+    }
+    h5 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .button {
+        display: block;
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+}

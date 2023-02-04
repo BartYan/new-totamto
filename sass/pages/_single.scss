@@ -1,0 +1,382 @@
+
+// single
+.single {
+    width: 75%;
+    
+    .blog__window-subHead {
+        text-align: center;
+    }
+
+    h1, h2, h3, h4, h5 {
+        margin: 1rem 0;
+        @media only screen and (max-width: 1024px) {
+            margin: 5% 0;
+        }
+    }
+
+    p {
+        margin: 2rem 0;
+        @media only screen and (max-width: 1024px) {
+            margin: 2rem 0;
+        }
+    }
+
+    &__back {
+        position: absolute;
+        top: 15%;
+        left: 2%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        font-family: FuturaPTDemi;
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: $color_dark;
+        @media only screen and (max-width: 1024px) {
+            top: 6rem;
+        }
+        @media only screen and (max-width: 600px) {
+            top: 5rem;
+        }
+    }
+    &__back::before {
+        content: '\25C0';
+        font-size: 2rem;
+        color: $color_red;
+        padding: 0 10px 0 0;
+    }
+    &__top {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        margin-bottom: 5%;
+        padding: 4% 0 0;
+        @media only screen and (max-width: 1400px) {
+            margin: 5% auto;
+        }
+        @media only screen and (max-width: 1024px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 5%;
+            padding:  0;
+        }
+        @media only screen and (max-width: 600px) {
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+            @media only screen and (max-width: 1024px) {
+                margin: 5% auto 15%;
+            }
+        }
+
+        .wrapper-carousel {
+            width: 30%;
+            margin: 0;
+            @media only screen and (max-width: 1400px) {
+                width: 50%;
+            }
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+    &__gallery {
+        padding: 10px;
+        border: 1px solid $color_dark;
+        img {
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &__info {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 7% 0 5%;
+        text-align: left;
+        @media only screen and (max-width: 1024px) {
+            width: 50%;
+            margin: 5% 0;
+        }
+        @media only screen and (max-width: 500px) {
+            width: 100%;
+            margin-right: 0%;
+        }
+
+        h5 {
+            font-family: 'FuturaPTBold';
+            font-size: 2.2rem;
+            line-height: 32px;
+        }
+
+        p {
+            font-family: 'FuturaPTBook';
+            padding: 0 0 10%;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .button {
+            background-color: $color_dark;
+            -webkit-box-shadow: 10px 10px 0px 0px $color_blue;
+            -moz-box-shadow: 10px 10px 0px 0px $color_blue;
+            box-shadow: 10px 10px 0px 0px $color_blue;
+            margin: 0 auto;
+            padding: 10px 20px;
+        }
+
+        .button:hover {
+            background-color: $color_dark;
+            -webkit-box-shadow: 10px 10px 0px 0px $color_blue;
+            -moz-box-shadow: 10px 10px 0px 0px $color_blue;
+            box-shadow: 10px 10px 0px 0px $color_blue;
+            margin: 0 auto;
+            padding: 10px 20px;
+        }
+    }
+    .items__stars {
+        position: relative;
+        margin: 0 1rem 0 0;
+        display: flex;
+        margin: -20px 0 0 0;
+        .bestseller {
+            display: block;
+            z-index: 10;
+            width: 100px;
+            margin: 0 0 1rem;
+            @media only screen and (max-width: 500px) {
+                width: 80px;
+            }
+        }
+        .new {
+            display: block;
+            z-index: 10;
+            width: 100px;
+            margin: -18px 0 0 10px;
+            @media only screen and (max-width: 500px) {
+                width: 80px;
+            }
+        }
+        //age circle
+        .age-item {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+    
+            border-radius: 50%;
+            background: $color_dark;
+            font-size: 14px;
+            color: $color_white;
+            @media only screen and (max-width: 500px) {
+                width: 70px;
+                height: 70px;
+            }
+            a {
+                font-size: 14px;
+                text-decoration: none;
+                color: $color_white;
+                &:hover {color: $color_blue;}
+            }
+        }
+        //age star
+        .age-item-star {
+            width: 110px;
+            height: 110px;
+            position: relative;
+            // bottom: 0;
+            // right: 7%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+            color: $color_white;
+            font-size: 14px;
+            @media only screen and (max-width: 500px) {
+                width: 90px;
+                height: 90px;
+            }
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                z-index: 2;
+            }
+            a {
+                font-size: 14px;
+                text-decoration: none;
+                color: $color_white;
+                z-index: 3;
+                &:hover {color: $color_red;}
+            }
+        }
+    }
+
+    &__buy {
+        position: fixed;
+        top: 15%;
+        right: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media only screen and (max-width: 1400px) {
+            position: relative;
+            right: auto;
+            top: auto;
+            margin: 0;
+        }
+        
+        &-button { 
+            text-align: center;
+            .button:hover {
+                padding: 10px 20px;
+                background-color: $color_dark;
+                -webkit-box-shadow: 10px 10px 0px 0px #dddd0a;
+                -moz-box-shadow: 10px 10px 0px 0px #dddd0a;
+                box-shadow: 10px 10px 0px 0px #dddd0a;          
+            }       
+        }
+        
+        &-box {
+            width: 400px;
+            height: fit-content;
+            margin: 0;
+            @media only screen and (max-width: 1400px) {
+                width: 80%;
+            }
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+                height: fit-content;
+            }
+        }
+        .bb-table-container {
+            max-height: 400px;
+        }
+    }
+    .buybox-widget {
+        border: 2.8px solid $color_blue;
+        background-color: #fff;
+    }
+    &__content-padd {
+        @media only screen and (min-width: 1401px) {
+            padding: 0 350px 0 0;
+        }
+    }
+    &__content {
+        margin: 5% 0;
+        
+        &-box {
+            margin: 2% 0 4%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &-imageBox {
+            position: relative;
+            width: fit-content;
+            .articles__item-age {
+                top: 10%;
+                right: 5%;
+            }
+        }
+        &-title {
+            font-family: FuturaPTHeavy;
+            font-size: 4.3rem;
+            @media only screen and (max-width: 1024px) {
+                font-size: 2rem;
+                padding: 20% 0 0;
+            }
+        }
+        &-head {
+            font-family: FuturaPTBold;
+            font-size: 1.8rem;
+            margin: 3% 0;
+        }
+        &-subHead {
+            font-family: FuturaPTHeavy;
+            font-size: 1.8rem;
+            margin: 3% 0;
+            color: $color_red;
+        }
+        &-txt {
+            font-family: FuturaPTBook;
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+        .text-center {
+            text-align: center;
+        }
+    }
+    &__photo {
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    // .carousel-nav {
+    //     cursor: grab;
+    //     cursor: -moz-grab;
+    //     cursor: -webkit-grab;
+    // }
+    // .carousel-nav:active {
+    //     cursor: grabbing;
+    //     cursor: -moz-grabbing;
+    //     cursor: -webkit-grabbing;
+    // }
+    // .slick-lightbox-slick-item-inner{
+    //     cursor: grab;
+    //     cursor: -moz-grab;
+    //     cursor: -webkit-grab;
+    // }
+    // .slick-lightbox-slick-item-inner:active {
+    //     cursor: grabbing;
+    //     cursor: -moz-grabbing;
+    //     cursor: -webkit-grabbing;
+    // }
+    .carousel .slick-current {
+        cursor: pointer;
+        cursor: -moz-pointer;
+        cursor: -webkit-pointer;
+    }
+    .carousel .slick-current:active {
+        cursor: pointer;
+        cursor: -moz-pointer;
+        cursor: -webkit-pointer;
+    }
+    
+}
+.single-blog {
+    width: 60%;
+    margin: 0 auto;
+    @media only screen and (max-width: 1024px) {
+        width: 95%;
+    }
+}
+
+
+.single__authors {
+    margin-top: 200px;
+    @media only screen and (max-width: 1024px) {
+        margin-top: 20%;
+    }
+    @media only screen and (max-width: 500px) {
+        margin-top: 40%;
+    }
+    .items {
+        justify-content: center;
+    }
+}
